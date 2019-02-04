@@ -1,20 +1,27 @@
 # todo_list
 Todo list in node.js
 
+## Commands:
 
-Commands:
-  app addTodo <todo> [group]         Add todo                       [aliases: a]
-  app removeTodo <id>                Remove todo                    [aliases: r]
-  app editTodo <id> [subject]        Edit todo                      [aliases: e]
-  app changeStatus <id> <id_status>  Change status item. Options: 1 - Active; 2
-                                     - Completed;                   [aliases: c]
-  app allListTodo                    Show all todo list           [aliases: all]
-  app activeListTodo                 Show active todo list        [aliases: act]
-  app completedListTodo              Show completed todo list     [aliases: cmp]
-  app filterGroup <group>            Filter for group               [aliases: f]
-  app syncDownload                   Download todo list with Api    [aliases: d]
-  app syncUpload                     Uploud todo list to Api        [aliases: u]
-  app syncDelete                     Delete todo list with Api    [aliases: del]
+`addTodo <todo> [group]`  Add todo                       [aliases: `a`]
+ 
+`removeTodo <id>`                Remove todo                    [aliases: `r`]
+  
+`editTodo <id> [subject]`     Edit todo                      [aliases: `e`]
+  
+`changeStatus <id> <id_status>`  Change status item. Options: 1 - Active; 2
+                                     - Completed;                   [aliases: `c`]
+                                     
+`allListTodo`                    Show all todo list           [aliases: `all`]
 
-Options:
-  --help  Show help                                                    [boolean]
+`activeListTodo`                 Show active todo list        [aliases: `act`]
+
+`completedListTodo`              Show completed todo list     [aliases: `cmp`]
+
+`filterGroup <group>`            Filter for group               [aliases: `f`]
+
+`syncDownload`                   Download todo list with Api    [aliases: `d`]
+
+`syncUpload`                     Uploud todo list to Api        [aliases: `u`]
+
+`syncDelete`                    Delete todo list with Api    [aliases: `del`]

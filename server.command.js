@@ -7,17 +7,17 @@ const syncDownloadCommand = {
    describe: 'Download todo list with Api',
    handler: async () => {
       try {
-         const download = async () => await syncDownload();
+         const data = await syncDownload();
 
-         download()
-            .then(response => {
-               removeAll();
-
-               response.map(todo => {
-                  addTodo(todo);
-               });
-            })
-            .catch(error => console.log('No data from API'));
+         if (data.length != 0) {
+            removeAll();
+            data.map(todo => {
+               addTodo(todo);
+            });
+            console.log('Download data with API');
+         } else {
+            console.log('No data from API');
+         }
       } catch (error) {
          console.log(error.message);
       }

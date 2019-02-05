@@ -2,7 +2,7 @@ const { status } = require('./config.json');
 
 function getStatusForID(idStatus) {
    let arr = [];
-   status.map(el => {
+   status.find(el => {
       if (el.id == idStatus) arr = el;
    });
    return arr;
